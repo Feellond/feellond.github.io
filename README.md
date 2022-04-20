@@ -1,4 +1,3 @@
-# feellond.github.io
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,16 +10,17 @@
               integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <title>Чекбокс в HTML5</title>
         <script>
-            window.onload = function funcLoad(){
+            function funcLoad(){
                 console.log('Script will load now...');
                 const params = new URLSearchParams(window.location.search);
                     for (const param of params) {
                       console.log(param);
                     }
+                alert("Page is loaded");
             }
         </script>
     </head>
-    <body>
+    <body onload="funcLoad()">
         <h1>Hello, world!</h1>
         <div id="content">not inited</div>
         <button onclick="validateData()" type="button" class="btn btn-primary">Show</button>
