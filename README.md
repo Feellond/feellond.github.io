@@ -10,6 +10,15 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <title>Чекбокс в HTML5</title>
+        <script>
+            window.onload = function funcLoad(){
+                console.log('Script will load now...');
+                const params = new URLSearchParams(window.location.search);
+                    for (const param of params) {
+                      console.log(param);
+                    }
+            }
+        </script>
     </head>
     <body>
         <h1>Hello, world!</h1>
