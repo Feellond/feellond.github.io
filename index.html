@@ -19,7 +19,7 @@
             }
 
             window.Telegram.WebApp.MainButton.setParams({is_visible: true});
-            window.Telegram.WebApp.onEvent('mainButtonClicked', window.Telegram.WebApp.sendData('sended data'));
+            window.Telegram.WebApp.MainButton.onClick(window.Telegram.WebApp.sendData('sended data'))
 
         </script>
     </head>
