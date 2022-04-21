@@ -19,9 +19,8 @@
             }
 
             window.Telegram.WebApp.MainButton.setParams({is_visible: true});
-            window.TelegramWebApp.MainButton.onClick(function() {
-                window.Telegram.WebApp.sendData('sended data');
-            });
+            //window.Telegram.WebApp.onEvent('mainButtonClicked', function(){window.Telegram.WebApp.sendData('sended data')});
+            window.Telegram.WebApp.MainButton.onclick = sendData('sended data');
 
         </script>
     </head>
