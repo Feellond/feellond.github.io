@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <title>Чекбокс в HTML5</title>
+        <title>TEST</title>
         <script>
             window.onload = function funcLoad(){
                 console.log('Script will load now...');
@@ -18,8 +18,9 @@
                     }
             }
 
-            window.Telegram.WebApp.MainButton.isVisible = true;
-            window.Telegram.WebApp.MainButton.show();
+            window.Telegram.WebApp.MainButton.setParams({text: "ButtonText", is_active: true, is_visible: true})
+            //window.Telegram.WebApp.MainButton.isVisible = true;
+            //window.Telegram.WebApp.MainButton.show();
 
         </script>
     </head>
