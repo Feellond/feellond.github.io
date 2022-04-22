@@ -16,7 +16,11 @@
                     }
                 document.body.style.setProperty('background-color',window.Telegram.WebApp.themeParams.bg_color);
                 document.body.style.setProperty('color',window.Telegram.WebApp.themeParams.text_color);
+
+                element = document.getElementById('');
                 //document.body.style.setProperty('',window.Telegram.WebApp.themeParams.);
+
+                window.Telegram.WebApp.onEvent('mainButtonClicked', function(){window.Telegram.WebApp.sendData('sended data')});
             }
 
             window.Telegram.WebApp.MainButton.setParams({is_visible: true});
@@ -36,7 +40,7 @@
                 <li>Сергов Сергей Сергеевич<span><input type="checkbox" name="id_2"/></span></li>
                 <li>Дом Доминик Доминикович<span><input type="checkbox" name="id_3"/></span></li>
                 <li>Манулов Манул Манулович<span><input type="checkbox" name="id_4"/></span></li>
-                <button type="submit">Отправить</button>
+                <button type="submit" id="SubmitButton">Отправить</button>
             </div>
         </div>
     </body>
