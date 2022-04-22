@@ -31,6 +31,8 @@
     transition: 0.3s all linear;
     background-color: white;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
 }
 .content_list_border {
     list-style: none;
@@ -46,3 +48,7 @@
 .content_list_border li:nth-child(3):hover {border-right: 10px solid #fcba30;}
 .content_list_border li:nth-child(4):hover {border-right: 10px solid #1ccfc9;}
 .content_list_border li:nth-child(5):hover {border-right: 10px solid #493224;}
+.content__list-input {
+    margin-left: auto;
+    margin-right: 0;
+}
