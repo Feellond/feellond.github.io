@@ -11,7 +11,6 @@
     border-radius:5px;
     border:2px solid #555;
 }
-
 .content__list li {
     font-family: "Trebuchet MS", "Lucida Sans";
     padding: 7px 20px;
@@ -30,6 +29,7 @@
 .content_list_border {
     list-style: none;
     padding: 0;
+    background-color: white;
 }
 .content_list_border li:nth-child(2){border-color: #8bc63e;}
 .content_list_border li:nth-child(3){border-color: #fcba30;}
