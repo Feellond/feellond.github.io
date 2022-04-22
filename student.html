@@ -39,22 +39,22 @@
                 document.body.style.setProperty('background-color', window.Telegram.WebApp.themeParams.bg_color);
                 document.body.style.setProperty('color', window.Telegram.WebApp.themeParams.text_color);
 
-                var elements = document.getElementsByTagName("a");
-                for(var i=0;i<elements.length;i++)
+                var links = document.getElementsByTagName("a");
+                for(var i=0;i<links.length;i++)
                 {
-                    if(elements[i].href)
+                    if(links[i].href)
                     {
-                        elements[i].style.color = window.Telegram.WebApp.themeParams.link_color;
+                        links[i].style.color = window.Telegram.WebApp.themeParams.link_color;
                     }
                 }
 
-                elements = document.getElementsByTagName("button");
-                for(var i=0;i<elements.length;i++)
+                var buttons = document.getElementsByTagName('button');
+                for(var i=0;i<buttons.length;i++)
                 {
-                    if(elements[i].href)
+                    if(buttons[i].href)
                     {
-                        elements[i].style.backgroundColor = window.Telegram.WebApp.themeParams.button_color;
-                        elements[i].style.color = window.Telegram.WebApp.themeParams.button_text_color;
+                        buttons[i].style.backgroundColor = window.Telegram.WebApp.themeParams.button_color;
+                        buttons[i].style.color = window.Telegram.WebApp.themeParams.button_text_color;
                     }
                 }
             }
@@ -64,12 +64,12 @@
     <body>
         <div class="content">
             <div class="content__list content_list_border">
-                <li>Иванов Иван Иванович<span></span></li>
-                <li>Сергов Сергей Сергеевич<span></span></li>
-                <li>Дом Доминик Доминикович<span></span></li>
-                <li>Манулов Манул Манулович<span></span></li>
-                <li>Крыков Крык Крыкович<span></span></li>
-                <li>Шлепов Шлепа Шлепович<span></span></li>
+                <li>Иванов Иван Иванович</li> <span><input type="checkbox"></span>
+                <li>Сергов Сергей Сергеевич</li>
+                <li>Дом Доминик Доминикович</li>
+                <li>Манулов Манул Манулович</li>
+                <li>Крыков Крык Крыкович</li>
+                <li>Шлепов Шлепа Шлепович</li>
                 <button type="submit" id="SubmitButton" onclick="sendBigData()">Отправить</button>
             </div>
         </div>
