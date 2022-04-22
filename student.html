@@ -20,7 +20,11 @@
                 element = document.getElementById('');
                 //document.body.style.setProperty('',window.Telegram.WebApp.themeParams.);
 
+                window.Telegram.WebApp.MainButton.isActive = false;
+                window.Telegram.WebApp.MainButton.hide()
                 window.Telegram.WebApp.onEvent('mainButtonClicked', sendBigData());
+                window.Telegram.WebApp.MainButton.isActive = true;
+                window.Telegram.WebApp.MainButton.show()
             }
 
             window.Telegram.WebApp.MainButton.setParams({is_visible: true});
